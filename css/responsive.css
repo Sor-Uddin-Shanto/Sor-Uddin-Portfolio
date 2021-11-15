@@ -1,0 +1,28 @@
+/* XL Device: 1200px */
+@media (min-width: 1450px) and (max-width: 1600px) {
+	
+}
+
+@media (min-width: 1200px) and (max-width: 1449px) {
+	
+}
+
+/* LG Device: 992px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+/* MD Device: 768px */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* SM Small Device: 768px */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+/* XSM All Small Device: 575px */
+@media (max-width: 575px) {
+    
+}

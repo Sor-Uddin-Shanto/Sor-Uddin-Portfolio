@@ -1,0 +1,511 @@
+body {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Saira', sans-serif;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+input:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+
+
+
+/* ==================== 01 Navbar ==================== */
+nav {
+    width: 100%;
+    height: auto;
+    background: #011444;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left img {
+    width: 25%;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 10px;
+    margin: 0 4px;
+    background: #000;
+    border-radius: 4px;
+}
+
+#show-nav,
+#hide-nav{
+    display: none;
+}
+
+
+
+/* ==================== 02 Home ==================== */
+
+.home-wrapper {
+    width: 100%;
+    height: 570px;
+    background: #f9f9f9;
+    position: relative;
+    display: flex;
+}
+
+#follow-icons {
+    transition: 1s;
+    transform: translateX(-400px);
+}
+
+.home-content-follow {
+    display: flex;
+}
+
+.home-content-follow ul {
+    display: flex;
+    background: #202323;
+    margin-top: 70px;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.home-content-follow ul li {
+    font-size: 42px;
+    margin: 0 18px;
+}
+
+.home-content-follow ul li a {
+    color: #71dbb2;
+}
+
+#pull-follow {
+    position: absolute;
+    font-size: 125px;
+    left: 420px;
+    top: 20px;
+    color: #202323;
+    transition: 1s;
+}
+
+.home-content-me {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.home-content-me .name {
+    font-size: 55px;
+}
+
+.the-name {
+    color: #fd4766;
+}
+
+.home-content-me .profession {
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.animate {
+    color: #fd4766;
+}
+
+.home-content-me .country {
+    font-size: 37px;
+    margin-top: 15px;
+}
+
+.the-country {
+    color: #fd4766;
+}
+
+.home-image {
+    width: 50%;
+    height: 100%;
+    background: #1ae4e4;
+    clip-path: polygon(100% 0%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    position: absolute;
+    right: 0;
+}
+
+
+
+/* ==================== 03 About ==================== */
+.about-me {
+    width: 100%;
+    height: auto;
+    background: #040f2f;
+    padding: 40px 0;
+}
+
+
+.about-top h2 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+.about-top h2::before {
+    position: absolute;
+    content: "about me";
+    font-size: 80px;
+    text-align: center;
+    justify-content: center;
+    transform: translateX(-22%);
+    opacity: 0.5;
+    margin-top: -24px;
+    color: transparent;
+    text-shadow: 0 0 12px #fff;
+    -webkit-text-stroke-width: 0;
+}
+
+.about-details {
+    padding: 30px 50px;
+    color: #fff;
+}
+
+.about-details div {
+    margin: 16px 0px;
+    font-size: 22px;
+}
+
+.about-details span {
+    padding: 0 10px;
+}
+
+.me-myself {
+    padding: 30px 70px;
+    color: #fff;
+    text-align: justify;
+}
+
+.me-myself h2 {
+    font-size: 45px;
+    color: #08fdd8;
+    margin-bottom: 40px;
+}
+
+.me-myself p {
+    font-size: 19px;
+}
+
+.me-myself a {
+    color: #08fdd8;
+}
+
+
+
+/* ==================== 04 Skills ==================== */
+
+#the-skills {
+    padding: 50px 0;
+}
+
+#the-skills h2 {
+    font-size: 42px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#the-skills p {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.bars:last-child {
+    padding-bottom: 30px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    border-radius: 8px;
+}
+
+.skill-per {
+    width: 0%;
+    height: 24px;
+    background: linear-gradient(to right, deepskyblue, indigo);
+    border-radius: 8px;
+    position: relative;
+    transition: 3s linear;
+    transition-delay: 0.3s;
+}
+
+.skill-per .percent {
+    position: absolute;
+    padding: 0px 6px;
+    color: #fff;
+    font-size: 16px;
+    top: 0;
+    right: 0;
+}
+
+
+
+/* ==================== 05 Project ==================== */
+.all-project {
+    padding: 60px 40px;
+    background: #040f2f;
+}
+
+.all-project .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-project h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.box a {
+    display: block;
+    text-align: center;
+    background: deepskyblue;
+    margin: 50px 90px 0 90px;
+    padding: 8px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.the-box {
+    height: 500px;
+    background: #000;
+    background-position: top;
+    transition: linear 8s;
+    border-radius: 6px;
+    border: 10px solid indigo;
+}
+
+.the-box.box-1 {
+    background: url(../img/01.jpg);
+    background-size: cover;
+}
+
+.the-box.box-2 {
+    background: url(../img/02.jpg);
+    background-size: cover;
+}
+
+.the-box.box-3 {
+    background: url(../img/03.jpg);
+    background-size: cover;
+}
+
+.the-box:hover {
+    background-position: bottom;
+}
+
+
+
+/* ==================== 06 Services ==================== */
+.my-service {
+    height: 600px;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+/* ==================== 07 Contact ==================== */
+.contact-me {
+    padding: 60px 0;
+    background: #040f2f;
+}
+
+.contact-head {
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.contact-left-text {
+    color: #fff;
+    padding: 20px 10px 20px 30px;
+}
+
+.contact-left-text h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-left-text p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 32px;
+    word-spacing: 7px;
+}
+
+.your-name,
+.the-mail,
+.the-subject {
+    width: 230px;
+    height: 50px;
+    margin: 20px 5px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.the-message {
+    width: 715px;
+    height: 220px;
+    margin: 4px 6px;
+    padding: 10px 15px;
+    border-radius: 18px;
+}
+
+.send-button {
+    width: 210px;
+    height: 55px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f9f9f9;
+    background: indigo;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin: 20px 5px;
+}
+
+.send-button i {
+    margin-right: 20px;
+    font-size: 22px;
+    transform: translateY(2px);
+}
+
+
+
+/* ==================== 07 Contact ==================== */
+footer {
+    padding: 10px 20px;
+    background: #091020;
+}
+
+#myBtn {
+    width: 48px;
+    height: 46px;
+    background: #2f0151;
+    position: fixed;
+    right: 12px;
+    bottom: 15px;
+    text-align: center;
+    line-height: 46px;
+    border: 2px solid #025875;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 99999;
+}
+
+.footer-logo img {
+    width: 60px;
+}
+
+.footer-logo span {
+    color: #dadada;
+    font-size: 26px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.social-icon {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icon ul {
+    margin-bottom: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+}
+
+.social-icon ul li a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #c6c9d8bf;
+    border-radius: 25px;
+    color: #969baa;
+    margin: 0 2px;
+    font-size: 18px;
+    transition: 0.5s;
+    display: block;
+}
+
+.social-icon ul li:hover a {
+    background: #fd4766;
+    color: #fff;
+    border: 1px solid #fd4766;
+    transform: translateY(-3px);
+}
+
+.footer-text p {
+    font-size: 15px;
+    color: #757575;
+    line-height: 50px;
+    padding: 8px 15px;
+    margin: 0;
+}
