@@ -218,7 +218,7 @@ nav ul li a {
 }
 
 .me-myself {
-    padding: 30px 70px;
+    padding: 20px 40px;
     color: #fff;
     text-align: justify;
 }
@@ -235,6 +235,14 @@ nav ul li a {
 
 .me-myself a {
     color: #08fdd8;
+}
+
+#the-circle{
+    /* position: absolute; */
+    /* left: 25%; */
+    /* top:15%; */
+    margin-top: 50px;
+    margin-left: -10px;
 }
 
 
@@ -352,15 +360,46 @@ nav ul li a {
 
 /* ==================== 06 Services ==================== */
 .my-service {
-    height: 600px;
     background: #fff;
+    padding: 40px 20px;
 }
 
+.service-title {
+    font-size: 42px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
 
+.service-division {
+    text-align: center;
+    margin: 20px;
+}
 
+.service-division span {
+    text-align: center;
+    display: inline-block;
+    margin-top: 8px;
+}
 
+.service-division i {
+    text-align: left;
+    display: block;
+    height: 20px;
+    margin-top: 12px;
+}
 
+.left-check {
+    width: 8%;
+    margin-left: 62px;
+}
 
+.service-division .col-md-4 {
+    border: 5px solid deepskyblue;
+    width: 32%;
+    margin: 6px;
+}
 
 
 /* ==================== 07 Contact ==================== */
